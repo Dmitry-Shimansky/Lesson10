@@ -29,5 +29,12 @@ chapter5[7].after(chapter5[5]);
 
 let chapter6 = book[2].querySelectorAll('ul li');
 
-chapter6[9].innerHTML = '<li>Глава 8: За пределами ES6</li>';
+//chapter6[9].innerHTML = '<li>Глава 8: За пределами ES6</li>';
+
+const newElement = document.createElement('li');
+newElement.textContent = 'Глава 8: За пределами ES6';
+console.log(newElement);
+chapter6[8].append(newElement);
+
+
 
